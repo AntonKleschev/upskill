@@ -6,12 +6,13 @@
 <body>
 Hello!
 
-<a href="rate">Фильмы с самым высоким рейтингом</a> or <a href="/exit">Exit</a>
-or <a href="/first/hello?name=Tom&surname=Jone">Request with parameters</a>
+<a href="/getAll">Все актеры</a> or
+<br>
+<a href="/">Любимые актеры пользователь</a>
 
 
 <div th:each="film : ${films}">
-    <table>
+    <table class="content-table">
         <tr>
             <th th:text="${film.getTitle()}"/>
             <th th:text="${film.getRate()}"/>
