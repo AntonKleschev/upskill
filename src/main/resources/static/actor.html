@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"><head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
     <meta charset="UTF-8">
     <title>Hello</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-Hello!
 
-<a href="rate">Фильмы с самым высоким рейтингом</a> or <a href="/exit">Exit</a>
 <br>
-
-<a href="/favoriteActors">Любимые актеры пользователей</a>
 
 <div>
     <table class="content-table">
@@ -18,7 +15,6 @@ Hello!
         <tr>
             <th>Name</th>
             <th>Last name</th>
-
         </tr>
         </thead>
         <tbody th:each="actor : ${actors}">
@@ -29,7 +25,7 @@ Hello!
         </tr>
         </tbody>
     </table>
-<!--    <a th:href="@{/people/{id}(id=${actor.getId()})}" th:text="${actor.getActorName()}">user</a>-->
+</div>
 </div>
 
 </body>

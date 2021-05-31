@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+Hello!
+<br>
+
+<div>
+    <table class="content-table">
+        <thead>
+        <tr>
+            <th>Link</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="active-row">
+            <td> <a href="actor">Actors</a> </td>
+            <td> Контролер по выдачи запросов таблицы Актеров. </td>
+        </tr>
+        <tr class="active-row">
+            <td> <a href="film">Films rate</a> </td>
+            <td> Запрос на фильмы с самым высоким рейтингом </td>
+        </tr>
+        </tbody>
+    </table>
+    <!--    <a th:href="@{/people/{id}(id=${actor.getId()})}" th:text="${actor.getActorName()}">user</a>-->
+</div>
+</div>
+
+</body>
+</html>
